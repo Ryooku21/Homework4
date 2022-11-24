@@ -11,7 +11,7 @@ Console.WriteLine("Введите натуральное число B:");
 int numberB = Convert.ToInt32(Console.ReadLine());
 numberB = Math.Abs(numberB);
 
-int DegreeB(int numA, int numB)
+int DegreeB(int numA, int numB) // метод для положительных чисел
 {
     int step = 1;
     int degree = numA;
@@ -22,7 +22,7 @@ int DegreeB(int numA, int numB)
     }
     return degree;
 }
-int DegreeNegative(int num1, int num2)
+int DegreeNegative(int num1, int num2) // метод для отрицательного числа А
 {
     int count = 1;
     int degreeNegative = num1;
