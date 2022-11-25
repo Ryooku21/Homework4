@@ -7,7 +7,7 @@
 
 // 9012 -> 12
 
-Console.WriteLine("Введите число:");
+Console.WriteLine("Введите целое число:");
 int anyNumber = Convert.ToInt32(Console.ReadLine());
 anyNumber = Math.Abs(anyNumber);
 
@@ -28,5 +28,5 @@ if (anyNumber == 0)
 }
 else
 {
-    Console.WriteLine($"Сумма чисел введенного числа равна {SummDigits(anyNumber)}");
+    Console.WriteLine($"Сумма цифр введенного числа равна {SummDigits(anyNumber)}");
 }
