@@ -6,12 +6,12 @@
 
 int[] array = new int[8];
 
-void FillArray(int[] arr) 
+void FillArray(int[] arr)
 {
     Random fillRndNum = new Random();
-    for(int step = 0; step < arr.Length; step++)
+    for (int step = 0; step < arr.Length; step++)
     {
-        arr[step] = fillRndNum.Next(0,100); 
+        arr[step] = fillRndNum.Next(0, 100);
     }
 }
 
@@ -20,7 +20,7 @@ void PrintArray(int[] arr)
     Console.Write("[");
     for (int step = 0; step < arr.Length; step++)
     {
-        if (step == arr.Length-1)
+        if (step == arr.Length - 1)
         {
             Console.Write($"{arr[step]}");
         }
@@ -32,5 +32,6 @@ void PrintArray(int[] arr)
     Console.Write("]");
 }
 
+Console.WriteLine("Массив из 8 элементов, заполненный случайными числами от 0 до 99:");
 FillArray(array);
 PrintArray(array);
